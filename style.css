@@ -50,6 +50,7 @@ a {
     display: flex;
     list-style: none;
 
+
 }
 
 .menu-principal>ul>li {
@@ -70,3 +71,38 @@ a {
 
 
 /* Case do menu principal*/
+
+.showcase-ofertas {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.showcase-ofertas>h1 {
+
+    font-weight: 700;
+    font-size: 4rem;
+    color: white;
+}
+
+/*Imagem de Fundo do Pagina Principal*/
+
+body {
+    background-image: url(img/fundo.jpg);
+    background-position: center;
+    background-size: cover;
+
+    /*Overlay*/
+
+    background-color: rgb(218, 198, 213);
+}
+
+.showcase-fotos>p {
+    font-weight: 300;
+    color: white;
+
+}
