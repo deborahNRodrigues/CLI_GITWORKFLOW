@@ -67,6 +67,7 @@ a {
 .menu-principal>ul>li:hover {
     opacity: 100%;
     cursor: pointer;
+
 }
 
 
@@ -87,19 +88,21 @@ a {
 
     font-weight: 700;
     font-size: 4rem;
-    color: white;
+
 }
 
 /*Imagem de Fundo do Pagina Principal*/
 
 body {
-    background-image: url(img/fundo.jpg);
+    /*Ibackground-image: url(img/fundo2.jpg);*/
+    background-color: rgb(240, 194, 126);
     background-position: center;
     background-size: cover;
 
     /*Overlay*/
 
-    background-color: rgb(218, 198, 213);
+    background-color: rgb(218, 198, 213, 0.25);
+    background-blend-mode: calc(198, 166, 100, 1);
 }
 
 .showcase-fotos>p {
