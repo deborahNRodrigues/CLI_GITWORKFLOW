@@ -22,28 +22,57 @@ body .showcase .item-showcase {
     background-image: url(img/fundodelicado.png);
     display: flex;
     height: 100vb;
+    margin-top: -70px;
     background-position: center;
     background-size: cover;
-    opacity: 50%;
+    /*opacity: 80%;*/
 
 
 
 }
 
-body .about-me {
-    font-family: Poppins;
-    color: #F0E68C;
-    font-size: 2rem;
-    text-transform: uppercase;
+
+
+
+
+/*Card da Página About-me*/
+
+.slider-wrapper {
     display: flex;
-    align-items: center;
-    margin: auto;
-    justify-content: center;
-    margin-bottom: 30%;
-
 
 
 }
+
+.card-list .card-item {
+    color: #fff;
+    width: 500px;
+    padding: 25px;
+    top: 60px;
+    bottom: 25px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 450px;
+    margin-right: 450px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.card-list .card-item>img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    border: 3px solid #fff;
+    padding: 4px;
+
+}
+
+
 
 header {
     width: 1140px;
@@ -57,7 +86,7 @@ header {
 }
 
 header a {
-    color: rgb(240, 230, 140);
+    color: #fff;
     margin-right: 40px;
     font-weight: 400;
     font-size: 1.2rem;
@@ -66,7 +95,7 @@ header a {
 /* carousel */
 .carousel {
     height: 100vh;
-    margin-top: -50px;
+    margin-top: -80px;
     width: 100vw;
     overflow: hidden;
     position: relative;
@@ -152,7 +181,7 @@ footer {
 footer h3 {
     font-weight: 400;
     font-size: 1.2rem;
-    color: rgb(240, 230, 140);
+    color: #fff;
 }
 
 /* thumbail */
