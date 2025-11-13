@@ -2,6 +2,7 @@
 
 body {
     margin: 0;
+    padding: 0;
     background-color: hsl(283, 14%, 50%);
     color: #eee;
     font-family: Poppins;
@@ -25,7 +26,7 @@ body .showcase .item-showcase {
     margin-top: -70px;
     background-position: center;
     background-size: cover;
-    /*opacity: 80%;*/
+    opacity: 80%;
 
 
 
@@ -46,9 +47,9 @@ body .showcase .item-showcase {
 .card-list .card-item {
     color: #fff;
     width: 500px;
-    padding: 25px;
+    padding: 20px;
     top: 60px;
-    bottom: 25px;
+    bottom: 20px;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -57,12 +58,13 @@ body .showcase .item-showcase {
     margin-left: 450px;
     margin-right: 450px;
     background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
+    border-radius: 40px;
     backdrop-filter: blur(30px);
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .card-list .card-item>img {
+    padding: 20px;
     width: 150px;
     height: 150px;
     border-radius: 100px;
@@ -72,6 +74,36 @@ body .showcase .item-showcase {
 
 }
 
+
+/*Estilo de fontes da Página About*/
+
+.card-list .card-item>p {
+    padding: auto;
+    margin-top: 5px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.card-list .card-item>span {
+    padding: auto;
+    margin-top: 5px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.card-list .card-item .contat-button {
+    color: black;
+    margin-bottom: 40px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.card-list .card-item .contat-button:hover {
+    color: hsl(285, 94%, 6%);
+}
 
 
 header {
