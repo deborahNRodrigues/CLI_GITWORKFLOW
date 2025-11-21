@@ -1,0 +1,127 @@
+/* Importa a fonte 'Poppins' do Google Fonts para ser usada na página. */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset de Página: Remove todas as margens e preenchimentos padrão dos elementos. */
+/* 'box-sizing: border-box' faz com que o padding e a borda não aumentem o tamanho total do elemento. */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do corpo da página (body). */
+body {
+    /* Define a família da fonte principal para 'Poppins'. */
+    font-family: Poppins;
+    /* Aplica um fundo com gradiente linear. */
+    background: linear-gradient(#EEAECA, #94BBE9);
+
+}
+
+/* Estilização do contêiner principal da seção de contato. */
+.contact-container {
+    /* Define a altura para 100% da altura da tela (viewport height). */
+    height: 100vh;
+    /* Usa Flexbox para organizar os itens. */
+    display: flex;
+    /* Alinha os itens verticalmente ao centro. */
+    align-items: center;
+    /* Distribui o espaço igualmente entre os itens. */
+    justify-content: space-evenly;
+}
+
+/* Estilização da seção esquerda do formulário de contato. */
+.contact-left {
+    /* Organiza os elementos filhos em uma coluna. */
+    display: flex;
+    flex-direction: column;
+    /* Alinha os itens à esquerda. */
+    align-items: start;
+    /* Adiciona um espaço de 20px entre os elementos filhos. */
+    gap: 20px;
+}
+
+/* Estilização do título 'h2' na seção esquerda. */
+.contact-left-title h2 {
+    font-weight: 600;
+    color: rebeccapurple;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+/* Estilização da linha horizontal (hr) usada como um sublinhado decorativo. */
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: rebeccapurple;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilização dos campos de entrada (input) do formulário. */
+.contact-input {
+    width: 450px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: gray;
+    border-radius: 50px;
+}
+
+/* Estilização para quando um campo de entrada está em foco (selecionado). */
+.contact-input:focus {
+    /* Adiciona uma borda colorida para indicar que o campo está ativo. */
+    border: 2px solid #ff994a;
+}
+
+/* Estilização do texto de placeholder dentro dos campos de entrada. */
+.contact-input::placeholder {
+    color: #a9a9a9;
+}
+
+/* Estilização específica para a área de texto (textarea). */
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+/* Estilização do botão de envio. */
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #ffff;
+    /* Espaço entre o texto e o ícone dentro do botão. */
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    /* Fundo com gradiente de cor. */
+    background: linear-gradient(270deg, #170557, #fa6d86);
+    /* Muda o cursor para uma mão ao passar por cima, indicando que é clicável. */
+    cursor: pointer;
+}
+
+.contact-left button img {
+    height: 15px;
+}
+
+/* Estilização da imagem na seção direita. */
+.contact-rigth img {
+    width: 500px;
+}
+
+/* Media Query: Aplica estilos específicos para telas com largura máxima de 800px. */
+@media(max-width: 800px) {
+
+    /* Ajusta a largura dos campos de entrada para serem responsivos. */
+    .contact-input {
+        /* A largura será 80% da largura da tela (viewport width). */
+        width: 80vw;
+
+    }
+}
