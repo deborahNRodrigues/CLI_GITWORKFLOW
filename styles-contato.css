@@ -1,24 +1,56 @@
-/* Importa a fonte 'Poppins' do Google Fonts para ser usada na página. */
+/* ==========================================================================
+   1. Configurações Globais e Importações
+   ========================================================================== */
+
+/* Importa a fonte 'Poppins' do Google Fonts. */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Reset de Página: Remove todas as margens e preenchimentos padrão dos elementos. */
-/* 'box-sizing: border-box' faz com que o padding e a borda não aumentem o tamanho total do elemento. */
+/* Reset CSS: Remove margens e preenchimentos padrão e ajusta o modelo de caixa. */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Estilização do corpo da página (body). */
-body {
-    /* Define a família da fonte principal para 'Poppins'. */
-    font-family: Poppins;
-    /* Aplica um fundo com gradiente linear. */
-    background: linear-gradient(#EEAECA, #94BBE9);
-
+a {
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-/* Estilização do contêiner principal da seção de contato. */
+/* Estilização do corpo da página. */
+body {
+    font-family: Poppins;
+    background: linear-gradient(#da5d93, #1f0230);
+}
+
+/* ==========================================================================
+   2. Cabeçalho (Header)
+   ========================================================================== */
+
+/* Estilização do cabeçalho e seus links de navegação. */
+header {
+    width: 1140px;
+    max-width: 80%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+header a {
+    color: #fff;
+    margin-right: 40px;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+/* ==========================================================================
+   3. Seção de Contato
+   ========================================================================== */
+
+/* Contêiner principal que alinha o formulário e a imagem. */
 .contact-container {
     /* Define a altura para 100% da altura da tela (viewport height). */
     height: 100vh;
@@ -30,7 +62,7 @@ body {
     justify-content: space-evenly;
 }
 
-/* Estilização da seção esquerda do formulário de contato. */
+/* Alinhamento dos elementos do formulário (lado esquerdo). */
 .contact-left {
     /* Organiza os elementos filhos em uma coluna. */
     display: flex;
@@ -41,25 +73,25 @@ body {
     gap: 20px;
 }
 
-/* Estilização do título 'h2' na seção esquerda. */
+/* Título do formulário. */
 .contact-left-title h2 {
     font-weight: 600;
-    color: rebeccapurple;
+    color: rgb(201, 186, 216);
     font-size: 40px;
     margin-bottom: 5px;
 }
 
-/* Estilização da linha horizontal (hr) usada como um sublinhado decorativo. */
+/* Linha decorativa abaixo do título. */
 .contact-left-title hr {
     border: none;
     width: 120px;
     height: 5px;
-    background-color: rebeccapurple;
+    background-color: rgb(227, 217, 236);
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
-/* Estilização dos campos de entrada (input) do formulário. */
+/* Estilo padrão para os campos de entrada (input e textarea). */
 .contact-input {
     width: 450px;
     height: 50px;
@@ -71,25 +103,24 @@ body {
     border-radius: 50px;
 }
 
-/* Estilização para quando um campo de entrada está em foco (selecionado). */
+/* Destaque visual para o campo em foco. */
 .contact-input:focus {
-    /* Adiciona uma borda colorida para indicar que o campo está ativo. */
-    border: 2px solid #ff994a;
+    border: 2px solid #7d16dd;
 }
 
-/* Estilização do texto de placeholder dentro dos campos de entrada. */
+/* Cor do texto de placeholder. */
 .contact-input::placeholder {
     color: #a9a9a9;
 }
 
-/* Estilização específica para a área de texto (textarea). */
+/* Ajustes específicos para a área de texto. */
 .contact-left textarea {
     height: 140px;
     padding-top: 15px;
     border-radius: 20px;
 }
 
-/* Estilização do botão de envio. */
+/* Botão de envio do formulário. */
 .contact-left button {
     display: flex;
     align-items: center;
@@ -100,28 +131,61 @@ body {
     gap: 10px;
     border: none;
     border-radius: 50px;
-    /* Fundo com gradiente de cor. */
-    background: linear-gradient(270deg, #170557, #fa6d86);
-    /* Muda o cursor para uma mão ao passar por cima, indicando que é clicável. */
+    background: linear-gradient(270deg, #a00b98, #9c1b33);
     cursor: pointer;
 }
 
+/* Ícone de seta dentro do botão. */
 .contact-left button img {
     height: 15px;
 }
 
-/* Estilização da imagem na seção direita. */
+/* Imagem decorativa no lado direito da seção de contato. */
 .contact-rigth img {
     width: 500px;
 }
 
-/* Media Query: Aplica estilos específicos para telas com largura máxima de 800px. */
+/* ==========================================================================
+   4. Responsividade (Media Queries)
+   ========================================================================== */
+
+/* Ajustes para telas menores que 800px (tablets e celulares). */
 @media(max-width: 800px) {
 
-    /* Ajusta a largura dos campos de entrada para serem responsivos. */
+    /* Ocupa quase toda a largura da tela para melhor usabilidade. */
     .contact-input {
         /* A largura será 80% da largura da tela (viewport width). */
         width: 80vw;
 
     }
+
+    /* Oculta a imagem decorativa para economizar espaço. */
+    .contact-rigth {
+        display: none;
+    }
+
+
+
+}
+
+/* ==========================================================================
+   5. Rodapé (Footer)
+   ========================================================================== */
+
+/* Estilização do rodapé da página. */
+footer {
+
+    display: flex;
+    margin-right: 70px;
+    margin-left: 70px;
+    text-transform: uppercase;
+}
+
+footer h3 {
+    margin-top: 2px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #fff;
+
 }

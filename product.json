@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "nome": "Os segredos do Baralho Cigano para Iniciantes- Ebook",
+        "preco": 39.99,
+        "imagem": "img/livro-baralho.jpg"
+    },
+    {
+        "id": 2,
+        "nome": "Os segredos do Baralho Cigano para Iniciantes - Livro Físico",
+        "preco": 49.99,
+        "imagem": "img/livro-baralho.jpg"
+    },
+    {
+        "id": 3,
+        "nome": "Planner Esotérico",
+        "preco": 9.99,
+        "imagem": "img/livro-baralho.jpg"
+    }
+]

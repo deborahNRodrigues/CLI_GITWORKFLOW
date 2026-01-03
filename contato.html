@@ -7,18 +7,25 @@
     <link rel="stylesheet" href="styles-contato.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about-me.html">Sobre Nós</a>
+            <a href="loja-virtual.html">Loja Virtual</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+        </header>
     <div class="contact-container">
-        <form action="" class="contact-left">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
 
             <div class="contact-left-title">
                 <h2>Formulário de Contato</h2>
                 <hr>
             </div>
+                <input type="hidden" name="access_key" value="0c6fad60-49fc-4c2b-b75d-a856b145fb3a">
                 <input type="text" name="name" placeholder="Informe seu nome completo" class="contact-input" required>
                 <input type="email" name="email" placeholder="Informe seu e-mail" class="contact-input" required>
-                <textarea name="messagem"placeholder="Digite sua mensagem"class="contact-input" required>
-                        
-                 </textarea>
+                <textarea name="mensagem" placeholder="Digite sua mensagem" class="contact-input" required></textarea>
                 <button type="submit" class="btn-input">Enviar<img src="img/arrow_icon.png"></button>
             
           
@@ -29,5 +36,9 @@
            
         </div>
     </div>
+
+    <footer>
+        <h3>©Todos os direitos reservados Sopro da Coruja 2025</h3>
+        </footer>
 </body>
 </html>

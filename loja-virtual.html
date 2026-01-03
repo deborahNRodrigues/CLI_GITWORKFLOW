@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento: informa ao navegador que este é um arquivo HTML5. -->
+<html lang="pt-br"> <!-- Tag raiz: envolve todo o conteúdo HTML e define o idioma da página como português do Brasil. -->
+
+<head> <!-- Cabeçalho do documento: contém metadados, links para estilos e scripts que não são exibidos diretamente na página. -->
+    <meta charset="UTF-8"> <!-- Meta tag: define a codificação de caracteres como UTF-8 (suporta acentos e caracteres especiais). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Meta tag viewport: configura a visualização para dispositivos móveis (responsividade). -->
+    <link rel="stylesheet" href="styles-loja.css"> <!-- Link: conecta a página a um arquivo de folha de estilos CSS externo. -->
+    <title>Loja Virtual</title> <!-- Título: define o texto que aparece na aba do navegador. -->
+    <script src="js/carrinho.js"></script> <!-- Script: conecta a página a um arquivo JavaScript externo. -->
+
+</head> <!-- Fechamento do cabeçalho. -->
+
+<body> <!-- Corpo: contém todo o conteúdo visível da página (textos, imagens, botões, etc.). -->
+    <div class="container"> <!-- Div: um contêiner genérico de divisão, usado aqui para agrupar o conteúdo principal. -->
+        <header> <!-- Header: define o cabeçalho visível da página ou seção. -->
+            <nav> <!-- Nav: define uma seção de navegação com links. -->
+                <a href="index.html">Home</a> <!-- Anchor (a): cria um hiperlink para a página 'index.html'. -->
+                <a href="about-me.html">Sobre Nós</a> <!-- Link para a página 'about-me.html'. -->
+                <a href="loja-virtual.html">Loja Virtual</a> <!-- Link para a página 'loja-virtual.html'. -->
+                <a href="contato.html">Contato</a> <!-- Link para a página 'contato.html'. -->
+            </nav> <!-- Fechamento da navegação. -->
+            <div class="title"> <!-- Div usada para agrupar e estilizar o título da seção. -->
+                <h3>Lista de Produtos</h3> <!-- Heading 3 (h3): um título de nível 3. -->
+            </div>
+           
+        </header> <!-- Fechamento do header. -->
+        <div class="list-product"> <!-- Div que agrupa a lista de produtos. -->
+            
+            <div class="item"> <!-- Div que representa um item individual de produto. -->
+                <img src="img/livro-baralho.jpg" alt=""> <!-- Image (img): exibe uma imagem. 'src' é o caminho, 'alt' é o texto alternativo. -->
+                <h2>Os Segredos do Baralho Cigano para Iniciantes - Ebook</h2> <!-- Heading 2 (h2): título do produto, nível 2. -->
+                <div class="price">R$29,99</div> <!-- Div para exibir o preço. -->
+                <button class="addCard"><a href="https://go.hotmart.com/X103300541X?dp=1">Comprar</a></button> <!-- Button: botão clicável contendo um link de compra. -->
+            </div>
+
+            <div class="item"> <!-- Item de produto 2 -->
+                <img src="img/livro-baralho.jpg" alt="">
+                <h2>Os Segredos do Baralho Cigano para Iniciantes - Produto Físico</h2>
+                <div class="price">R$49,99</div>
+                <button class="addCard"><a href="https://go.hotmart.com/X103300541X?dp=1">Comprar</a></button>
+            </div>
+
+           
+            <div class="item"> <!-- Item de produto 4 -->
+                <img src="img/sibila.png" alt="">
+                <h2>Segredos Do Baralho Vera Sibilla Italiana,
+                     Em Português</h2>
+                <div class="price">R$55,72</div>
+                <button class="addCard"><a href="https://mercadolivre.com/sec/31ZW8Mm">Comprar</a></button>
+            </div>
+            
+        </div> <!-- Fechamento da div list-product. -->
+                
+                
+    </div> <!-- Fechamento do container. -->
+
+
+</body> <!-- Fechamento do corpo. -->
+
+
+</html> <!-- Fechamento do documento HTML. -->

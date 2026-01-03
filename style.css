@@ -1,477 +1,752 @@
+/* Importa a fonte 'Poppins' do Google Fonts com várias espessuras e estilos. */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Estilos aplicados ao corpo (body) da página. */
 body {
     margin: 0;
+    /* Remove a margem padrão do body. */
     padding: 0;
-    background-color: hsl(283, 14%, 50%);
+    /* Remove o preenchimento padrão do body. */
+    background-color: hsl(286, 77%, 9%);
+    /* Define a cor de fundo usando HSL (um tom escuro de roxo). */
     color: #eee;
+    /* Define a cor do texto principal para um cinza claro. */
     font-family: Poppins;
+    /* Define a família da fonte para 'Poppins'. */
     font-size: 18px;
+    /* Define o tamanho da fonte base. */
 }
 
+/* Estilos para os links (tags <a>). */
 a {
     text-decoration: none;
+    /* Remove o sublinhado padrão dos links. */
     text-transform: uppercase;
-
-
-
+    /* Transforma o texto dos links em maiúsculas. */
+    color: #fff;
 }
 
 
-/*Body da Página About-me*/
+/* --- Body da Página About-me --- */
 
+/* Estiliza a seção de destaque (showcase) dentro do body. */
 body .showcase .item-showcase {
     background-image: url(img/fundo-sobre.jpg);
+    /* Define uma imagem de fundo. */
     display: flex;
+    /* Usa o modelo de layout flexbox. */
     height: 100vb;
+    /* Define a altura para 100% da altura da viewport (bloco). */
     margin-top: -65px;
+    /* Move a seção para cima para sobrepor o header. */
     background-position: center;
+    /* Centraliza a imagem de fundo. */
     background-size: cover;
+    /* Faz a imagem de fundo cobrir toda a área do elemento. */
     opacity: 80%;
-
-
-
+    /* Define a opacidade do elemento para 80%. */
 }
 
 
-/*Card da Página About-me*/
+/* --- Card da Página About-me --- */
 
+/* Contêiner para o slider (embora não pareça estar sendo usado como slider aqui). */
 .slider-wrapper {
     display: flex;
-
-
+    /* Usa o modelo de layout flexbox. */
+    margin-top: -40px;
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente. */
+    align-items: center;
+    /* Centraliza o conteúdo verticalmente. */
+    width: 100%;
+    /* Ocupa toda a largura para centralizar o filho. */
+    height: 100%;
+    /* Ocupa toda a altura para centralizar o filho. */
 }
 
+/* Estilo para cada card na lista de cards. */
 .card-list .card-item {
     color: #fff;
+    /* Define a cor do texto dentro do card. */
     width: 500px;
+    /* Define a largura do card. */
     padding: 5px;
+    /* Adiciona um preenchimento interno. */
     top: 65px;
+    /* Posiciona o card 65px a partir do topo do seu contêiner relativo. */
     bottom: 35px;
+    /* Posiciona o card 35px a partir da base. */
     display: flex;
+    /* Usa o modelo de layout flexbox. */
     position: relative;
+    /* Define a posição como relativa para que 'top' e 'bottom' funcionem. */
     flex-direction: column;
+    /* Organiza os itens filhos em uma coluna. */
     align-items: center;
+    /* Centraliza os itens filhos horizontalmente. */
     justify-content: center;
-    margin-left: 450px;
-    margin-right: 450px;
+    /* Centraliza os itens filhos verticalmente. */
+    /* As margens foram removidas para permitir a centralização pelo flexbox do pai. */
     background-color: rgba(255, 255, 255, 0.2);
+    /* Fundo branco semitransparente. */
     border-radius: 40px;
+    /* Arredonda os cantos do card. */
     backdrop-filter: blur(30px);
+    /* Aplica um efeito de desfoque no conteúdo atrás do card (efeito "glassmorphism"). */
     border: 1px solid rgba(255, 255, 255, 0.5);
+    /* Adiciona uma borda branca semitransparente. */
 }
 
+/* Estilo para a imagem dentro do card. */
 .card-list .card-item>img {
-    padding: 10px;
+    padding: 15px;
+    /* Adiciona um preenchimento ao redor da imagem. */
+    margin-top: 25px;
     width: 150px;
+    /* Define a largura da imagem. */
     height: 150px;
+    /* Define a altura da imagem. */
     border-radius: 100px;
+    /* Torna a imagem circular. */
     margin-bottom: 20px;
+    /* Adiciona espaço abaixo da imagem. */
     border: 3px solid #fff;
-
-
+    /* Adiciona uma borda branca sólida. */
 }
 
 
-/*Estilo de fontes da Página About*/
+/* --- Estilo de fontes da Página About --- */
 
+/* Estilo para o parágrafo (título do nome) dentro do card. */
 .card-list .card-item>p {
-    top: -20px;
+    top: -15px;
+    /* Move o texto para cima (requer position: relative no elemento). */
     text-transform: uppercase;
+    /* Transforma o texto em maiúsculas. */
     color: rebeccapurple;
+    /* Define a cor do texto para um tom de roxo. */
     margin-top: 15px;
+    /* Adiciona margem no topo. */
     font-size: 2rem;
+    /* Define o tamanho da fonte (2 vezes o tamanho base). */
     font-weight: 700;
+    /* Define a espessura da fonte como negrito. */
 }
 
+/* Estilo para o span (subtítulo) dentro do card. */
 .card-list .card-item>span {
-    top: -30px;
     color: rebeccapurple;
-    padding: 5px;
-    margin-top: 10px;
+    /* Define a cor do texto. */
+    padding: 0 5px;
+    /* Adiciona preenchimento horizontal. */
+    margin-top: -10px;
+    /* Ajusta a margem superior para aproximar do título. */
     font-size: 1rem;
+    /* Define o tamanho da fonte. */
     font-weight: 700;
-    justify-content: right;
+    /* Define a espessura da fonte como negrito. */
+    text-align: center;
+    /* Centraliza o texto dentro do span. */
+    margin-bottom: 20px;
+    /* Adiciona um espaço antes do botão. */
+    line-height: 1.5;
+    /* Aumenta o espaço entre as linhas do texto. */
 }
 
+/* Estilo para o botão de contato dentro do card. */
 .card-list .card-item .contat-button {
-    padding: 8px;
-    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #ffff;
+    /* Espaço entre o texto e o ícone dentro do botão. */
+    gap: 10px;
     border: none;
-    background-color: #eee;
-    letter-spacing: 4px;
-    font-family: Poppins;
-    font-size: 1rem;
-    font-weight: 500;
-    border-radius: 12px 8px 12px 8px;
-
-
+    border-radius: 50px;
+    background: linear-gradient(270deg, #a00b98, #9c1b33);
+    cursor: pointer;
 }
 
+/* Estilo do botão de contato ao passar o mouse sobre ele (hover). */
 .card-list .card-item .contat-button:hover {
-
     background-color: rebeccapurple;
-    color: #fff;
+    /* Muda a cor de fundo. */
+    color: #ffff;
+    /* Muda a cor do texto. */
 }
 
+/* --- Cabeçalho (Header) --- */
 header {
     width: 1140px;
+    /* Define uma largura fixa. */
     max-width: 80%;
+    /* Define uma largura máxima de 80% da tela. */
     margin: auto;
+    /* Centraliza o header horizontalmente. */
     height: 50px;
+    /* Define a altura do header. */
     display: flex;
+    /* Usa o modelo de layout flexbox. */
     align-items: center;
+    /* Alinha os itens verticalmente ao centro. */
     position: relative;
+    /* Define a posição como relativa. */
     z-index: 100;
+    /* Garante que o header fique acima de outros elementos com z-index menor. */
 }
 
+/* Estilo para os links dentro do header. */
 header a {
     color: #fff;
+    /* Define a cor do texto. */
     margin-right: 40px;
+    /* Adiciona espaço à direita de cada link. */
     font-weight: 400;
+    /* Define a espessura da fonte. */
     font-size: 1.2rem;
+    /* Define o tamanho da fonte. */
 }
 
-/* carousel */
+/* --- Carrossel (Carousel) --- */
+
+/* Contêiner principal do carrossel. */
 .carousel {
     height: 100vh;
+    /* Define a altura para 100% da altura da viewport. */
     margin-top: -80px;
+    /* Move o carrossel para cima, sobrepondo o header. */
     width: 100vw;
+    /* Define a largura para 100% da largura da viewport. */
     overflow: hidden;
+    /* Esconde qualquer conteúdo que transborde o contêiner. */
     position: relative;
+    /* Define a posição como relativa para posicionar elementos filhos. */
 }
 
+/* Contêiner da lista de slides. */
 .carousel .list .item {
     width: 100%;
+    /* Ocupa 100% da largura do contêiner pai. */
     height: 100%;
+    /* Ocupa 100% da altura do contêiner pai. */
     position: absolute;
+    /* Permite que os slides se sobreponham. */
     inset: 0 0 0 0;
+    /* Atalho para top: 0; right: 0; bottom: 0; left: 0;. */
 }
 
+/* Imagem dentro de um slide. */
 .carousel .list .item img {
     width: 100%;
+    /* Imagem ocupa 100% da largura do item. */
     height: 100%;
+    /* Imagem ocupa 100% da altura do item. */
     object-fit: cover;
+    /* Redimensiona a imagem para cobrir o contêiner, cortando se necessário. */
 }
 
+/* Contêiner do conteúdo (texto) dentro de um slide. */
 .carousel .list .item .content {
     position: absolute;
+    /* Posiciona o conteúdo sobre a imagem. */
     top: 20%;
+    /* Distância do topo. */
     width: 1140px;
+    /* Largura fixa. */
     max-width: 80%;
+    /* Largura máxima de 80% da tela. */
     left: 50%;
+    /* Posiciona a borda esquerda no centro da tela. */
     transform: translateX(-50%);
+    /* Move o elemento 50% de sua própria largura para a esquerda para centralizá-lo. */
     padding-right: 30%;
+    /* Adiciona um preenchimento à direita para não deixar o texto ir até a borda. */
     box-sizing: border-box;
+    /* Garante que o padding não aumente a largura total do elemento. */
     color: #fff;
+    /* Cor do texto. */
     text-shadow: 0 5px 10px #0004;
+    /* Adiciona uma sombra ao texto para melhor legibilidade. */
 }
 
+/* Estilo para o autor no conteúdo do slide. */
 .carousel .list .item .author {
     font-weight: bold;
+    /* Texto em negrito. */
     letter-spacing: 10px;
+    /* Aumenta o espaçamento entre as letras. */
 }
 
+/* Estilo para o título e tópico no conteúdo do slide. */
 .carousel .list .item .title,
 .carousel .list .item .topic {
     font-size: 5em;
+    /* Tamanho da fonte grande. */
     font-weight: bold;
+    /* Texto em negrito. */
     line-height: 1.3em;
+    /* Altura da linha para melhor espaçamento vertical. */
 }
 
+/* Cor específica para o tópico. */
 .carousel .list .item .topic {
-    color: #f1683a;
+    color: #d23af1;
+    /* Cor roxa/rosa vibrante. */
 }
 
+/* Contêiner dos botões no conteúdo do slide. */
 .carousel .list .item .buttons {
     display: grid;
+    /* Usa o layout de grade. */
     grid-template-columns: repeat(2, 130px);
+    /* Cria duas colunas, cada uma com 130px de largura. */
     grid-template-rows: 40px;
+    /* Define a altura da linha da grade. */
     gap: 5px;
+    /* Espaço entre os botões. */
     margin-top: 20px;
-
+    /* Espaço acima dos botões. */
 }
 
+/* Estilo geral para os botões dentro do carrossel. */
 .carousel .list .item .buttons button {
     border: none;
-    background-color: #eee;
+    /* Remove a borda. */
+    background-color: rebeccapurple;
+    /* Cor de fundo. */
+    color: #fff;
+    /* Cor da fonte. */
     letter-spacing: 3px;
+    /* Espaçamento entre as letras. */
     font-family: Poppins;
+    /* Família da fonte. */
     font-weight: 500;
+    /* Espessura da fonte. */
     border-radius: 20px;
+    /* Cantos arredondados. */
 }
 
+/* Estilo específico para o segundo botão (geralmente o botão "outline" ou secundário). */
 .carousel .list .item .buttons button:nth-child(2) {
     background-color: transparent;
+    /* Fundo transparente. */
     border: 1px solid #fff;
+    /* Borda branca. */
     color: #eee;
+    /* Cor do texto. */
 }
 
 
 
-/* Rodapé da Página */
-
+/* --- Rodapé da Página (Footer) --- */
 footer {
-
     display: flex;
+    /* Usa o modelo de layout flexbox. */
     margin-right: 70px;
+    /* Margem direita. */
     margin-left: 70px;
+    /* Margem esquerda. */
     text-transform: uppercase;
+    /* Texto em maiúsculas. */
 }
 
+/* Estilo para o título h3 dentro do rodapé. */
 footer h3 {
     margin-top: 2px;
+    /* Margem no topo. */
     margin-bottom: 40px;
+    /* Margem na base. */
     font-weight: 400;
-    font-size: 1.5rem;
+    /* Espessura da fonte. */
+    font-size: 1.2rem;
+    /* Tamanho da fonte. */
     color: #fff;
-
+    /* Cor do texto. */
 }
 
-/* thumbail */
+/* --- Miniaturas (Thumbnail) de Navegação do Carrossel --- */
+
+/* Contêiner das miniaturas. */
 .thumbnail {
     position: absolute;
+    /* Posicionado em relação ao carrossel. */
     bottom: 50px;
+    /* Distância da base. */
     left: 50%;
+    /* Posicionado no centro horizontal (antes da transformação). */
     width: max-content;
+    /* A largura se ajusta ao conteúdo. */
     z-index: 100;
+    /* Fica acima dos slides, mas abaixo das setas se necessário. */
     display: flex;
+    /* Itens em linha. */
     gap: 20px;
+    /* Espaço entre as miniaturas. */
 }
 
+/* Cada item de miniatura. */
 .thumbnail .item {
     width: 150px;
+    /* Largura fixa. */
     height: 220px;
+    /* Altura fixa. */
     flex-shrink: 0;
+    /* Impede que o item encolha se não houver espaço. */
     position: relative;
+    /* Para posicionar o conteúdo de texto sobre a imagem. */
 }
 
+/* Imagem da miniatura. */
 .thumbnail .item img {
     width: 100%;
+    /* Ocupa toda a largura do item. */
     height: 100%;
+    /* Ocupa toda a altura do item. */
     object-fit: cover;
+    /* Cobre a área, cortando se necessário. */
     border-radius: 20px;
+    /* Cantos arredondados. */
 }
 
+/* Conteúdo de texto sobre a miniatura. */
 .thumbnail .item .content {
     color: #fff;
+    /* Cor do texto. */
     position: absolute;
+    /* Posicionado sobre a imagem. */
     bottom: 10px;
+    /* Distância da base. */
     left: 10px;
+    /* Distância da esquerda. */
     right: 10px;
+    /* Distância da direita. */
 }
 
+/* Título na miniatura. */
 .thumbnail .item .content .title {
     font-weight: 500;
+    /* Espessura da fonte. */
 }
 
+/* Descrição na miniatura. */
 .thumbnail .item .content .description {
     font-weight: 300;
+    /* Espessura da fonte mais leve. */
 }
 
-/* arrows */
+/* --- Setas (Arrows) de Navegação do Carrossel --- */
 .arrows {
     position: absolute;
+    /* Posicionado em relação ao carrossel. */
     top: 80%;
+    /* Distância do topo. */
     right: 52%;
+    /* Distância da direita. */
     z-index: 100;
+    /* Garante que fiquem acima de outros elementos. */
     width: 300px;
+    /* Largura do contêiner das setas. */
     max-width: 30%;
+    /* Largura máxima. */
     display: flex;
+    /* Itens em linha. */
     gap: 10px;
+    /* Espaço entre as setas. */
     align-items: center;
+    /* Alinha as setas verticalmente. */
 }
 
+/* Estilo dos botões de seta. */
 .arrows button {
     width: 40px;
+    /* Largura. */
     height: 40px;
+    /* Altura. */
     border-radius: 50%;
+    /* Botão circular. */
     background-color: #eee4;
+    /* Fundo branco semitransparente. */
     border: none;
+    /* Sem borda. */
     color: #fff;
+    /* Cor do ícone/texto da seta. */
     font-family: monospace;
+    /* Fonte monoespaçada para os símbolos < e >. */
     font-weight: bold;
+    /* Negrito. */
     transition: .5s;
+    /* Transição suave para o efeito hover. */
 }
 
+/* Efeito hover para os botões de seta. */
 .arrows button:hover {
     background-color: #fff;
-    color: #000;
+    /* Fundo branco sólido. */
+    color: #1a0113;
+    /* Cor do ícone/texto para um tom escuro de roxo. */
 }
 
-/* animation */
+/* --- Animações do Carrossel --- */
+
+/* Define que o primeiro slide (item) visível terá um z-index maior para ficar na frente. */
 .carousel .list .item:nth-child(1) {
     z-index: 1;
+    /* Coloca o primeiro item na camada superior. */
 }
 
-/* animation text in first item */
-
+/* Animação de entrada para o conteúdo do primeiro item. */
 .carousel .list .item:nth-child(1) .content .author,
 .carousel .list .item:nth-child(1) .content .title,
 .carousel .list .item:nth-child(1) .content .topic,
 .carousel .list .item:nth-child(1) .content .des,
 .carousel .list .item:nth-child(1) .content .buttons {
     transform: translateY(50px);
+    /* Estado inicial: deslocado para baixo. */
     filter: blur(20px);
+    /* Estado inicial: desfocado. */
     opacity: 0;
+    /* Estado inicial: invisível. */
     animation: showContent .5s 1s linear 1 forwards;
+    /* Aplica a animação 'showContent'. */
 }
 
+/* Keyframes da animação 'showContent' (de invisível/desfocado para visível/focado). */
 @keyframes showContent {
     to {
         transform: translateY(0px);
+        /* Estado final: na posição original. */
         filter: blur(0px);
+        /* Estado final: focado. */
         opacity: 1;
+        /* Estado final: visível. */
     }
 }
 
+/* Atrasos (delay) diferentes para cada parte do conteúdo, criando um efeito cascata. */
 .carousel .list .item:nth-child(1) .content .title {
     animation-delay: 1.2s !important;
+    /* Título aparece após 1.2s. */
 }
 
 .carousel .list .item:nth-child(1) .content .topic {
     animation-delay: 1.4s !important;
+    /* Tópico aparece após 1.4s. */
 }
 
 .carousel .list .item:nth-child(1) .content .des {
     animation-delay: 1.6s !important;
+    /* Descrição aparece após 1.6s. */
 }
 
 .carousel .list .item:nth-child(1) .content .buttons {
     animation-delay: 1.8s !important;
+    /* Botões aparecem após 1.8s. */
 }
 
-/* create animation when next click */
+/* --- Animação ao clicar em "NEXT" --- */
+
+/* Anima a imagem do slide que está saindo para se transformar na nova miniatura. */
 .carousel.next .list .item:nth-child(1) img {
     width: 150px;
+    /* Largura inicial da animação (tamanho da miniatura). */
     height: 220px;
+    /* Altura inicial da animação (tamanho da miniatura). */
     position: absolute;
+    /* Posição absoluta para animar. */
     bottom: 50px;
+    /* Posição inicial na base. */
     left: 50%;
+    /* Posição inicial no centro. */
     border-radius: 30px;
+    /* Raio da borda inicial. */
     animation: showImage .5s linear 1 forwards;
+    /* Aplica a animação 'showImage'. */
 }
 
+/* Keyframes da animação 'showImage' (a imagem do novo slide cresce a partir da miniatura). */
 @keyframes showImage {
     to {
         bottom: 0;
+        /* Posição final. */
         left: 0;
+        /* Posição final. */
         width: 100%;
+        /* Largura final (tela cheia). */
         height: 100%;
+        /* Altura final (tela cheia). */
         border-radius: 0;
+        /* Sem borda arredondada no final. */
     }
 }
 
+/* Anima a entrada da nova miniatura na lista de miniaturas. */
 .carousel.next .thumbnail .item:nth-last-child(1) {
     overflow: hidden;
+    /* Esconde o conteúdo que transborda durante a animação. */
     animation: showThumbnail .5s linear 1 forwards;
+    /* Aplica a animação 'showThumbnail'. */
 }
 
+/* Garante que a imagem do slide que está saindo fique na frente durante a transição. */
 .carousel.prev .list .item img {
     z-index: 100;
+    /* Coloca a imagem na camada superior. */
 }
 
+/* Keyframes da animação 'showThumbnail' (a miniatura aparece crescendo da largura 0). */
 @keyframes showThumbnail {
     from {
         width: 0;
+        /* Largura inicial 0. */
         opacity: 0;
+        /* Opacidade inicial 0. */
     }
 }
 
+/* Anima o contêiner das miniaturas para a esquerda para dar espaço à nova miniatura. */
 .carousel.next .thumbnail {
     animation: effectNext .5s linear 1 forwards;
+    /* Aplica a animação 'effectNext'. */
 }
 
+/* Keyframes da animação 'effectNext' (desliza o contêiner das miniaturas). */
 @keyframes effectNext {
     from {
         transform: translateX(150px);
+        /* Posição inicial deslocada para a direita. */
     }
 }
 
-/* running time */
-
+/* --- Barra de Tempo (Progresso da Animação) --- */
 .carousel .time {
     position: absolute;
+    /* Posicionada no topo do carrossel. */
     z-index: 1000;
+    /* Fica acima de tudo. */
     width: 0%;
+    /* Largura inicial 0. */
     height: 3px;
-    background-color: #f1683a;
+    /* Altura da barra. */
+    background-color: #1c011d;
+    /* Cor da barra. */
     left: 0;
+    /* Alinhada à esquerda. */
     top: 0;
+    /* Alinhada ao topo. */
 }
 
+/* Ativa a animação da barra de tempo quando as classes 'next' ou 'prev' são adicionadas. */
 .carousel.next .time,
 .carousel.prev .time {
     animation: runningTime 3s linear 1 forwards;
+    /* Aplica a animação 'runningTime'. */
 }
 
+/* Keyframes da animação 'runningTime' (a barra diminui de 100% para 0%). */
 @keyframes runningTime {
     from {
-        width: 100%
+        width: 100%;
+        /* Começa com a largura total. */
     }
 
     to {
-        width: 0
+        width: 0;
+        /* Termina com largura 0. */
     }
 }
 
 
-/* prev click */
+/* --- Animação ao clicar em "PREV" --- */
 
+/* Coloca o segundo item (que se tornará o primeiro) em uma camada superior. */
 .carousel.prev .list .item:nth-child(2) {
     z-index: 2;
+    /* Garante que ele fique visível sobre o item atual. */
 }
 
+/* Anima a imagem do slide que está entrando (vindo da miniatura). */
 .carousel.prev .list .item:nth-child(2) img {
     animation: outFrame 0.5s linear 1 forwards;
+    /* Aplica a animação 'outFrame'. */
     position: absolute;
+    /* Posição absoluta para animar. */
     bottom: 0;
+    /* Posição final na base. */
     left: 0;
+    /* Posição final à esquerda. */
 }
 
+/* Keyframes da animação 'outFrame' (o slide atual encolhe para se tornar uma miniatura). */
 @keyframes outFrame {
     to {
         width: 150px;
+        /* Largura final (tamanho da miniatura). */
         height: 220px;
+        /* Altura final (tamanho da miniatura). */
         bottom: 50px;
+        /* Posição final na base. */
         left: 50%;
+        /* Posição final no centro. */
         border-radius: 20px;
+        /* Cantos arredondados no final. */
     }
 }
 
+/* Anima a miniatura que está saindo da lista. */
 .carousel.prev .thumbnail .item:nth-child(1) {
     overflow: hidden;
+    /* Esconde o conteúdo que transborda. */
     opacity: 0;
+    /* Fica invisível. */
     animation: showThumbnail .5s linear 1 forwards;
+    /* Usa a mesma animação de aparecer, mas como o item será removido, ele some. */
 }
 
+/* Desativa os eventos de clique nos botões durante a animação para evitar cliques múltiplos. */
 .carousel.next .arrows button,
 .carousel.prev .arrows button {
     pointer-events: none;
+    /* Impede que o usuário clique nos botões enquanto a animação ocorre. */
 }
 
+/* Animação de saída para o conteúdo do slide que está se tornando o principal. */
 .carousel.prev .list .item:nth-child(2) .content .author,
 .carousel.prev .list .item:nth-child(2) .content .title,
 .carousel.prev .list .item:nth-child(2) .content .topic,
 .carousel.prev .list .item:nth-child(2) .content .des,
 .carousel.prev .list .item:nth-child(2) .content .buttons {
     animation: contentOut 1.5s linear 1 forwards !important;
+    /* Aplica a animação 'contentOut'. */
 }
 
+/* Keyframes da animação 'contentOut' (o conteúdo do slide antigo desaparece). */
 @keyframes contentOut {
     to {
         transform: translateY(-150px);
+        /* Desloca para cima. */
         filter: blur(20px);
+        /* Desfoca. */
         opacity: 0;
+        /* Torna invisível. */
     }
 }
 
+/* --- Media Queries (Design Responsivo) --- */
+
+/* Estilos aplicados quando a largura da tela é 678px ou menor. */
 @media screen and (max-width: 678px) {
+
+    /* Remove o padding direito do conteúdo do carrossel para aproveitar melhor o espaço. */
     .carousel .list .item .content {
         padding-right: 0;
+        /* Remove o preenchimento à direita. */
     }
 
+    /* Reduz o tamanho da fonte do título em telas menores. */
     .carousel .list .item .content .title {
         font-size: 30px;
+        /* Diminui o tamanho da fonte do título. */
     }
 }

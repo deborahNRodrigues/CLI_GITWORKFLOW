@@ -1,0 +1,175 @@
+/* Importa a fonte 'Poppins' do Google Fonts com várias espessuras e estilos. */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Seletor universal para aplicar um reset básico de estilos a todos os elementos. */
+* {
+    padding: 0;
+    /* Remove o preenchimento padrão. */
+    margin: 0;
+    /* Remove a margem padrão. */
+    top: 0;
+    /* Define a propriedade 'top' como 0. Nota: Isso só tem efeito em elementos com posicionamento (relative, absolute, fixed). */
+    bottom: 0;
+    /* Define a propriedade 'bottom' como 0. Nota: Isso só tem efeito em elementos com posicionamento. */
+    box-sizing: border-box;
+    /* Garante que padding e border não aumentem a largura ou altura total do elemento. */
+    font-family: Poppins, sans-serif;
+    /* Define a família de fontes padrão para 'Poppins' e uma fonte sans-serif como alternativa. */
+
+}
+
+/* Estilização do cabeçalho da página. */
+header {
+    display: flex;
+    /* Usa o modelo de layout flexbox. */
+    align-items: center;
+    /* Alinha os itens filhos verticalmente ao centro. */
+    justify-content: space-between;
+    /* Distribui o espaço entre os itens, colocando o primeiro no início e o último no final. */
+    padding: 20px 0;
+    /* Adiciona preenchimento vertical de 20px e nenhum preenchimento horizontal. */
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+
+header a {
+    color: #fff;
+    /* Define a cor do texto. */
+    margin-bottom: auto;
+    margin-right: 40px;
+    /* Adiciona espaço à direita de cada link. */
+    font-weight: 400;
+    /* Define a espessura da fonte. */
+    font-size: 1.2rem;
+    /* Define o tamanho da fonte. */
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+body {
+    background-color: rgba(109, 9, 61, 0.8);
+    display: flex;
+    /* Define o layout do corpo como flexbox. */
+
+}
+
+body .title {
+    color: #eee;
+    /* Define a cor do texto do título. */
+    margin-top: 25%;
+    /* Adiciona uma margem superior grande. */
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    /* Transforma o texto em maiúsculas. */
+}
+
+
+
+/* Contêiner principal da página da loja. */
+.container {
+    width: 900px;
+    /* Define uma largura fixa de 900px. */
+
+    max-width: 90vw;
+    /* Define uma largura máxima de 90% da largura da viewport, para responsividade. */
+    margin: auto;
+    /* Centraliza o contêiner horizontalmente na página. */
+    text-align: center;
+    /* Centraliza o texto de todos os elementos filhos. */
+    padding-top: 10px;
+    /* Adiciona um preenchimento no topo do contêiner. */
+}
+
+/* Estilo para todos os elementos SVG (ícones). */
+svg {
+    width: 30px;
+    /* Define a largura dos ícones SVG para 30px. */
+
+}
+
+/*.title {
+    display: flex;
+}*/
+
+.title h3 {
+    font-weight: 360;
+    /* Define a espessura da fonte do h3. */
+    margin-left: -650%;
+    /* Margem esquerda negativa (pode precisar de ajuste). */
+}
+
+
+
+/* Estilo para o ícone do carrinho de compras no cabeçalho. */
+
+
+/* Estilo para a imagem dentro de um item de produto. */
+.list-product .item img {
+    width: 90%;
+    /* A imagem ocupa 90% da largura do seu contêiner (.item). */
+    filter: drop-shadow(0 50px 20px #0009);
+    /* Adiciona um efeito de sombra projetada para dar profundidade. */
+
+}
+
+/* Contêiner da lista de produtos. */
+.list-product {
+    display: grid;
+    /* Usa o modelo de layout de grade (Grid). */
+    grid-template-columns: repeat(3, 1fr);
+    /* Cria 4 colunas de largura igual. */
+    gap: 20px;
+    /* Define um espaço de 20px entre os itens da grade (produtos). */
+
+}
+
+/* Estilo para cada item (card) de produto na lista. */
+.list-product .item {
+    background-color: #eeeee6;
+    /* Cor de fundo cinza claro para o card. */
+    padding: 20px;
+    /* Adiciona preenchimento interno de 20px. */
+    border-radius: 20px;
+    /* Arredonda os cantos do card. */
+}
+
+/* Estilo para o título (h2) do produto. */
+.list-product .item h2 {
+    font-weight: 500;
+    /* Define a espessura da fonte. */
+    font-size: large;
+    /* Define o tamanho da fonte. */
+}
+
+/* Estilo para o preço do produto. */
+.list-product .item .price {
+    letter-spacing: 7px;
+    /* Aumenta o espaçamento entre as letras para um efeito estilizado. */
+    font-size: small;
+    /* Define o tamanho da fonte como pequeno. */
+}
+
+/* Estilo para o botão "Adicionar ao Carrinho". */
+.list-product .item button {
+    background-color: #353432;
+    /* Cor de fundo escura. */
+    color: #eee;
+    /* Cor do texto clara. */
+    padding: 15px 15px;
+    /* Adiciona preenchimento interno ao botão. */
+    border-radius: 20px;
+    /* Arredonda os cantos do botão. */
+    margin-top: 10px;
+    /* Adiciona uma margem no topo para separá-lo do preço. */
+    border: none;
+    /* Remove a borda padrão do botão. */
+    cursor: pointer;
+    /* Muda o cursor para uma mão ao passar o mouse, indicando que é clicável. */
+}
