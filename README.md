@@ -32,7 +32,7 @@ Clone este repositório:
 
 git clone https://github.com/seu-usuario/nome-do-repositorio.git
 
-cesse a pasta do projeto:
+Acesse a pasta do projeto:
 
 cd nome-do-repositorio
 
